@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.home-body
+{
+    height: auto;
+    width: 100%;
+}
+.home-body::before
+{
+    background: url('./images/img1.jpg') no-repeat center center/cover;
+    content: '';
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-section-1::before
+{
+    content: '';
+    background: url('./images/img3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.3);
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+    box-shadow: 0px 2px 2px aqua;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    background: linear-gradient(to right,black,rgb(26, 25, 25));
+}
+.navbar img
+{
+    width: 50px;
+    height: 50px;
+}
+.navbar span
+{
+    font-size: 2rem;
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: aqua;
+} 
+.navbar span:hover{cursor: grab; color: lime;}
+.nav
+{
+    margin-left: 0rem;
+}
+.link
+{
+    color: white;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+.link:hover{color: lime;}
+
+.home-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.home-content
+{
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.home-content h1
+{
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
+.home-content p
+{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding-right: 40rem;
+    color: wheat;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.view
+{
+    padding: 0rem 4rem;
+    margin-right: 0rem;
+    margin-left: -4rem;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    margin-top: 2.5rem;
+    display: flex;
+}
+.view-link
+{
+    font-size: 1.5rem;
+    color: lightblue;
+    text-decoration: none;
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    box-shadow: 0px 2px 2px aqua;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+.view-link:hover
+{
+    color: lightcoral;
+}
+.home-img img
+{
+    position: relative;
+    top: 9rem;
+    right: 10rem;
+    box-shadow: 0px 2px 20px aqua;
+    border-radius: 20px;
+    background-color: rgb(7, 24, 37);
+    padding: 2rem 2rem;
+}
+
+.home-section-2
+{
+    margin-top: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.home-section-2 .product-content
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home-section-2 .product-content h1
+{
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.home-section-2 .product-content h3
+{
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 3px;
+    color: rgb(6, 6, 32);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.product-box-1
+{
+    display: flex;
+    align-items: center;
+    padding: 4rem 6rem;
+}
+.box-1
+{
+    box-shadow: 0px 2px 20px black;
+    padding: 2rem 5rem;
+    width: 180rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px 10px 80px 80px;
+    background: linear-gradient(to right,rgb(21, 131, 98),rgb(41, 228, 181));
+}
+.box-1 h1
+{
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.box-1 p
+{
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: rgb(3, 19, 19);
+    margin-bottom: 2rem;
+}
+.get-btn
+{
+    padding: 1rem 4rem;
+    background-color: lightcoral;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0px 2px 2px black;
+    margin: 0 4rem;
+    margin-bottom: 1rem;
+}
+.get-btn:hover{background-color: coral; cursor: pointer;}
+.get-link
+{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+.product-para-1 
+{
+    margin-left: 10rem;
+    font-size: 2rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(49, 10, 53);
+}
+.box-2
+{
+    box-shadow: 0px 2px 20px black;
+    padding: 2rem 5rem;
+    width: 200rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px 10px 80px 80px;
+    background: linear-gradient(to right,rgb(21, 131, 98),rgb(41, 228, 181));
+}
+.box-2 h1
+{
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.box-2 p
+{
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: rgb(3, 19, 19);
+    margin-bottom: 2rem;
+}
+.product-para-2 
+{
+    margin-right: 10rem;
+    font-size: 2rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(49, 10, 53);
+}
+.box-3
+{
+    box-shadow: 0px 2px 20px black;
+    padding: 2rem 5rem;
+    width: 180rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px 10px 80px 80px;
+    background: linear-gradient(to right,rgb(21, 131, 98),rgb(41, 228, 181));
+} 
+.box-3 h1
+{
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.box-3 p
+{
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: rgb(3, 19, 19);
+    margin-bottom: 2rem;
+}
+.product-para-3
+{
+    margin-left: 10rem;
+    font-size: 2rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(49, 10, 53);
+}
+.box-1:hover
+{cursor: grab; background: linear-gradient(to right,rgb(29, 139, 175),rgb(74, 197, 238));}
+.box-2:hover
+{cursor: grab; background: linear-gradient(to right,rgb(29, 139, 175),rgb(74, 197, 238));}
+.box-3:hover
+{cursor: grab; background: linear-gradient(to right,rgb(29, 139, 175),rgb(74, 197, 238));}
+
+.footer
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+}
+.footer h1
+{
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+/* Product Styling */
+
+.product-body
+{
+    height: auto;
+}
+.product-body::before
+{
+    background: url('./images/home-pepsi.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    content: '';
+    filter: brightness(1);
+}
+.product-navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 6rem;
+    background-color: rgb(8, 16, 39);
+    box-shadow: 0 2px 2px aqua;
+    border-radius: 0 0 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.product-navbar img
+{
+    width: 60px;
+    height: 60px;
+}
+.product-nav .navlink
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    margin: 0 3rem;
+    font-size: 1.4rem;
+} .product-nav .navlink:hover{color: lime;}
+
+.product-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    padding: 2rem 4rem;
+}
+.product-get
+{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid lime;
+    box-shadow: 0 2px 20px black;
+    padding: 2rem 6rem;
+    margin: 4rem 2.4rem;
+    position: relative;
+    align-items: center;
+    border-radius: 5px 5px 20px 20px;
+    background: linear-gradient(to right,rgb(8, 18, 32),rgb(28, 77, 151));
+}
+.product-get:hover
+{
+    background: linear-gradient(to right,rgb(13, 33, 59),rgb(26, 99, 141));
+    cursor: grab;
+}
+.product-get img
+{
+    width: 80px;
+    height: 140px;
+    margin-bottom: 1rem;
+}
+.product-get h1
+{
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.product-get p
+{
+    color: rgb(203, 201, 224);
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* Buy Styling */
+
+.buy-body
+{
+    height: auto;
+}
+.buy-body::before
+{
+    background: url('./images/img3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    content: '';
+}
+.buy-form
+{
+    margin-top: 15rem;   
+    height: auto;
+}
+
+.form
+{
+    border-radius: 20px;
+    margin: 4rem 20rem;
+    background: url('./images/img4.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+.buy-box
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 7rem;
+}
+.buy-box label
+{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.buy-box input,textarea
+{
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgb(26, 25, 25);
+    border: 0;
+    box-shadow: 0 2px 2px aqua;
+    outline: 0;
+    color: aqua;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    border-radius: 0 0 20px 20px;
+}
+.buy-box input
+{
+    width: 25.3rem;
+}
+.buy-box textarea
+{
+    width: 65rem;
+}
+.buy-box button
+{
+    margin: 3rem 22rem 0 22rem;
+    position: relative;
+    top: 2rem;
+    padding: 1rem 0;
+    background: linear-gradient(to right,black,rgb(70, 68, 68));
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 2px 2px aqua;
+} .buy-box button:hover{color: aqua;}
+
+@media (max-width:991px)
+{
+    .navbar
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .navbar span
+    {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    .nav
+    {
+        margin-top: 2rem;
+    }
+    .link
+    {
+        font-size: 1rem;
+        margin: 0 1.5rem;
+    }
+    .home-section-1::before
+    {
+        height: 94rem;
+    }
+    .home-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 16rem;
+        left: 0rem;
+    }
+    .home-content p
+    {
+        padding-right: 0rem;
+        font-size: 1rem;
+    }
+    .home-content h1
+    {
+        font-size: 2rem;
+    }
+    .view
+    {
+        margin-left: 0rem;
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .view-link
+    {
+        font-size: 1rem;
+    }
+    .home-img img
+    {
+        width: 12rem;
+        height: 20rem;
+        margin-top: 10rem;
+        position: relative;
+        left: 0rem;
+    }
+    .home-section-2 .product-content h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .home-section-2 .product-content h3
+    {
+        font-size: 1.2rem;
+    }
+    .product-box-1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-1 
+    {
+        width: 20rem;
+    }
+    .box-1 h1
+    {
+        font-size: 2rem;
+    }
+    .box-1 p
+    {
+        font-size: 1.2rem;
+    }
+    .get-btn
+    {
+        font-size: 1rem;
+        margin: 0 0;
+        padding: 1rem 1rem;
+    }
+    .get-link
+    {
+        font-size: 1rem;
+    }
+    .product-para-1
+    {
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 1rem;
+        margin-left: -3rem;
+        position: relative;
+        left: 1.5rem;
+        top: 2rem;
+    }
+    .box-2
+    {
+        width: 20rem;
+        position: relative;
+        bottom: 3rem;
+    }
+    .box-2 h1
+    {
+        font-size: 2rem;
+    }
+    .box-2 p
+    {
+        font-size: 1.2rem;
+    }
+    .product-para-2
+    {
+        text-align: center;
+        margin: 3rem 0;
+        font-size: 1rem;
+        margin-left: -3rem;
+        position: relative;
+        left: 1.5rem;
+        bottom: 6rem;
+    }
+    .box-3
+    {
+        width: 20rem;
+        position: relative;
+        bottom: 3rem;
+    }
+    .box-3 h1
+    {
+        font-size: 2rem;
+    }
+    .box-3 p
+    {
+        font-size: 1.2rem;
+    }
+    .product-para-3
+    {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: -3rem;
+        position: relative;
+        left: 1.5rem;
+        bottom: -2rem;
+    }
+    .footer
+    {
+        text-align: center;
+    }
+    .footer h1
+    {
+        font-size: 1.2rem;
+        margin: 0 2rem;
+    }
+
+    .product-navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-nav
+    {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .product-nav .navlink
+    {
+        font-size: 1.2rem;
+        margin: 0 3rem;
+    }
+    .product-section
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+    .product-get
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 2rem;
+        margin: 3rem 2rem;
+    }
+    .form
+    {
+        margin-left: -28rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buy-box input,textarea
+    {
+        text-align: center;
+        align-items: center;
+        width: 20rem;
+    }
+}
